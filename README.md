@@ -8,6 +8,6 @@ Pour importer un fichier vidhosp
 
 ```r
 library(lisvidhosp)
-vidhosp <- import_vidhosp('201808_VIDHOSP.txt')
+vidhosp <- importe_vidhosp('201808_VIDHOSP.txt')
 ```
 
