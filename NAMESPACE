@@ -2,4 +2,5 @@
 
 export(importe_vidhosp)
 export(lis_format)
+export(normalise)
 import(dplyr)

@@ -11,10 +11,10 @@
 importe_vidhosp <- function(chemin_vidhosp, partie_variable = FALSE, etiquettes =TRUE) {
 
   # Déterminer la version du format
-  v_vidhosp <- litvidhosp::lit_format(chemin_vidhosp)
+  v_vidhosp <- lis_format(chemin_vidhosp)
 
   # Sélectionne les données de format
-  format_v <- filter(litvidhosp::formats, format_version == v_vidhosp, position_variable == FALSE)
+  format_v <- filter(formats, format_version == v_vidhosp, position_variable == FALSE)
 
   db <- readr::read_fwf(file = chemin_vidhosp,
                   col_positions = readr::fwf_widths(
