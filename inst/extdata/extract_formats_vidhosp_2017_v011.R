@@ -67,7 +67,7 @@ db$nom[is.na(db$debut)] <- paste0('dmt', seq_len(sum(is.na(db$debut))))
 
 db$nom_variable <- normalise(db$nom)
 
-db$format_date_applicable <- as.Date('2018-03-01')
+db$format_date_applicable <- as.Date('2017-03-01')
 db$format_version <- 'V011'
 db$position_variable <- is.na(db$debut)
 glimpse(db)
