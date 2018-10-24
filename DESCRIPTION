@@ -1,7 +1,7 @@
-Package: readvidhosp
+Package: lisvidhosp
 Type: Package
 Title: VID-HOSP
-Version: 0.1.0
+Version: 0.3.1
 Date: 2018-10-23
 Authors@R: person("Joris", "Muller", email = "joris.muller@chru-strasbourg.fr", role = c("aut", "cre"))
 Description: Lire et analyser les fichiers VID-HOSP du PMSI
@@ -10,3 +10,7 @@ RoxygenNote: 6.1.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 LazyData: true
+Imports: 
+    dplyr,
+    readr,
+    stringr

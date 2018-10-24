@@ -45,23 +45,9 @@ db <- db[!is.na(db$taille), ]
 premiere_ligne_trop <- grep('DMT n° N', x = db$nom)
 db <- db[-(premiere_ligne_trop:nrow(db)), ]
 
-# Nom dans R : normaliser simplement en ASCII
-normalise <- function(x) {
-  x %>%
-    # Retirer les espaces sur-numéraires
-    stringr::str_trim() %>%
-    # Tout mettre en mininuscule
-    stringr::str_to_lower() %>%
-    # Retirer les accents
-    iconv(from = 'UTF-8', to = 'ASCII//TRANSLIT') %>%
-    # retirer tout ce qui n'est pas des digits ou ASCII ou espace
-    gsub(pattern = '[^a-z^0-9^ ]', replacement = '') %>%
-    # Remplacer les expaces par des underscores
-    gsub(pattern = ' ', replacement = '_') %>%
-    # Limiter à 20 charactères
-    substr(1, 20)
-}
+library(lisvidhosp)
 
+db$nom_variable <- normalise(db$nom)
 
 db$nom[is.na(db$debut)] <- paste0('dmt', seq_len(sum(is.na(db$debut))))
 
