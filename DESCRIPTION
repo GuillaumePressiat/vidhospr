@@ -1,7 +1,7 @@
-Package: readvidhosp
+Package: litvidhosp
 Type: Package
 Title: VID-HOSP
-Version: 0.1.0
+Version: 0.2.0
 Date: 2018-10-23
 Authors@R: person("Joris", "Muller", email = "joris.muller@chru-strasbourg.fr", role = c("aut", "cre"))
 Description: Lire et analyser les fichiers VID-HOSP du PMSI
