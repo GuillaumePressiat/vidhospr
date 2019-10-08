@@ -33,7 +33,7 @@ normalise <- function(x, limite = 26) {
     substr(1, limite) %>%
     # Supprimer _ final ou avec une seule lettre
     gsub(pattern = '_.{0,1}$|\\°', replacement = '') %>%
-    stringr::str_remove('\\^0')
+    stringr::str_remove('0')
 
 
 }
