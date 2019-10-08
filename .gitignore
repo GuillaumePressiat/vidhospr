@@ -6,3 +6,6 @@
 # RStudio files
 .Rproj.user/
 .Rproj.user
+
+# Macintosh ds store
+.DS_Store

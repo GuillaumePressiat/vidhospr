@@ -18,7 +18,9 @@ normalise <- function(x, limite = 26) {
     # Tout mettre en mininuscule
     stringr::str_to_lower() %>%
     # Passer en ASCII
+    gsub("['`^~\"]", " ", .) %>%
     iconv(from = 'UTF-8', to = 'ASCII//TRANSLIT') %>%
+    gsub("['`^~\"]", "", .) %>%
     # Retirer certains mots de liaisons
     gsub(pattern = mots_liaison, replacement = ' ') %>%
     # Une deuxième fois s'il y en a deux qui se suivent
@@ -30,7 +32,8 @@ normalise <- function(x, limite = 26) {
     # Limiter à n charactères
     substr(1, limite) %>%
     # Supprimer _ final ou avec une seule lettre
-    gsub(pattern = '_.{0,1}$|', replacement = '')
+    gsub(pattern = '_.{0,1}$|\\°', replacement = '') %>%
+    stringr::str_remove('\\^0')
 
 
 }

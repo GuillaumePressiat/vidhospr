@@ -8,7 +8,7 @@
 #' @return Un tibble avec les données du VID-HOSP
 #' @export
 #' @import dplyr
-importe_vidhosp <- function(chemin_vidhosp, partie_variable = FALSE, etiquettes =TRUE) {
+importe_vidhosp <- function(chemin_vidhosp, partie_variable = FALSE, etiquettes =TRUE, ...) {
 
   # Déterminer la version du format
   v_vidhosp <- lis_format(chemin_vidhosp)
@@ -19,8 +19,7 @@ importe_vidhosp <- function(chemin_vidhosp, partie_variable = FALSE, etiquettes 
   db <- readr::read_fwf(file = chemin_vidhosp,
                   col_positions = readr::fwf_widths(
                     widths = format_v$taille,
-                    col_names = format_v$nom_variable)
-  )
+                    col_names = format_v$nom_variable), ...)
 
   if (etiquettes) {
     NULL

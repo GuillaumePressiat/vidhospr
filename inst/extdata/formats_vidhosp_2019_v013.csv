@@ -1,0 +1,230 @@
+"",,,,,Position,,
+"",,,,Type de la,,,
+Nom,Taille,Début,Fin,,dans la,Obligatoire,Consignes
+"",,,,norme (B2 *),,,
+"",,,,,norme,,
+"",,,,,,,"A prendre sur l’attestation de droits, la carte Vitale ou la prise en"
+N° immatriculation assuré,13,1,13,2,déc-24,O,
+"",,,,,,,charge.
+"",,,,,,,"A prendre sur l’attestation de droits, la carte Vitale ou la prise en"
+Clé du N° immatriculation,2,14,15,2,25-26,O,
+"",,,,,,,charge.. Clé à contrôler après la saisie annexe 5
+"",,,,,,,"A prendre sur l’attestation de droits, la carte Vitale ou la prise en"
+Code Grand Régime,2,16,17,2,49-50,O,
+"",,,,,,,charge. Voir codification annexe 2
+"",,,,,,,Reporter l’information figurant dans la zone « régime
+Code gestion,2,18,19,,,O,
+"",,,,,,,obligatoire » de la carte vitale
+"",,,,,,,Indiquer ici la date de naissance du bénéficiaire. ATTENTION
+Date de naissance du bénéficiaire,8,20,27,2,96-101,O,
+"",,,,,,,format différent de B2 JJMMAAAA
+Sexe du bénéficiaire,1,28,28,,,O,
+N° administratif de séjour,20,29,48,,,O,
+N° format VID-HOSP,4,49,52,,,O,V013
+N° FINESS d’inscription  e-PMSI,9,53,61,,,O,
+"",,,,,,,"A renseigner si l’information est présente sur la carte Vitale,"
+N° immatriculation individuel,13,62,74,2S,50-62,F,"l’attestation Clé à contrôler après la saisie, cf. annexe 5  de la"
+"",,,,,,,norme B2
+"",,,,,,,
+"",,,,,,,A prendre sur le même support que le n° immatriculation. Clé à
+Clé du N° immatriculation individuel,2,75,76,2S,63-64,F,
+"",,,,,,,"contrôler après la saisie, cf. annexe 5  de la norme B2"
+"",,,,,,,Précise et justifie l’exonération ou la modulation du ticket
+"",,,,,,,modérateur appliqué aux soins facturés. Cf. codification annexe
+Justification d’exonération ou de modulation du,,,,,,,
+"",1,77,77,2,79,O,"9. Cette justification vaut pour la totalité de la facture, sauf"
+ticket modérateur,,,,,,,
+"",,,,,,,indication contraire au niveau de la ligne dans le type 3 (position
+"",,,,,,,64) ou le Type 4 (position 54) en Norme CP.
+Code de prise en charge du forfait journalier,1,78,78,3,70,F,
+"",,,,,,,10 : maladie / 13 : maladie régime local Alsace-Moselle / 30 :
+Nature d’assurance,2,79,80,2,77-78,O,
+"",,,,,,,maternité / 41 : accident du travail / 90 : prévention maladie
+"",,,,,,,Indiquer le type de contrat codification fournie par la caisse. 85 :
+"",,,,,,,sortants du dispositif CMUC (géré par un organisme obligatoire)
+"",,,,,,,87 : sortants du dispositif CMUC (géré par un organisme
+Type de contrat,2,81,82,2,117-118,F,
+"",,,,,,,complémentaire) 88 : aide à la mutualisation (panier de biens =
+"",,,,,,,panier CMUC) 89 : bénéficiaire de la CMU complémentaire (en
+"",,,,,,,"cours), quel que soit le gestionnaire"
+Séjour facturable à l'assurance maladie,1,83,83,,,O,
+Motif de la non facturation à l'assurance maladie,1,84,84,,,N,
+"",,,,,,,Participation forfaitaire de 18€ en cas de réalisation d’actes
+Facturation du 18 €,1,85,85,,,O,
+"",,,,,,,coûteux au cours de la prise en charge
+Nombre de venues de la facture,4,86,89,,,O,
+Montant à facturer au titre du TM,10,90,99,,,O,
+Montant à facturer au titre du FJ,10,100,109,,,O,
+Montant total du séjour remboursable pour l'AMO,,,,,,,
+"",10,110,119,,,O,
+"(i.e. hors prestations annexes)",,,,,,,
+Montant lié à la majoration au parcours de soins,4,120,123,,,O,
+Montant base remboursement,10,124,133,,,O,
+Taux de remboursement,5,134,138,,,O,
+Patient bénéficiaire de la CMU,1,139,139,,,F,"0 : Non | 1 : Oui, laisser à vide si pas d'information"
+"",,,,,,,A renseigner pour tous les nouveau-nés dont la mère est
+N° administratif de séjour de la mère,20,140,159,,,F,
+"",,,,,,,hospitalisée dans l’établissement
+Hospitalisation d'un nouveau-né auprès de la mère,1,160,160,,,F,1 pour oui laisser à vide sinon
+Hospitalisation pour prélèvement d'organe,1,161,161,,,F,1 pour oui laisser à vide sinon
+"",,,,,,,Date du début de l’hospitalisation quel que soit l’établissement
+Date de l’hospitalisation,8,162,169,2,80-85,O,(en cas de transfert par exemple). ATTENTION format différent
+"",,,,,,,de B2 JJMMAAAA
+"",,,,,,,"Dans le cas d’un séjour normal, il doit correspondre au montant"
+"",,,,,,,du reste à charge patient hors prestations annexes. Il doit être
+Montant total du séjour remboursable pour l'AMC,10,170,179,,,O,
+"",,,,,,,renseigné même si le patient n’a pas d’assurance
+"",,,,,,,complémentaire.
+Code participation assuré,1,180,180,3,117,F,
+N° d’entrée,9,181,189,2,40-48,O,N° attribué par l’établissement
+Rang de naissance,1,190,190,2,102,F,
+"",,,,,,,Valeur 000 pour le régime général. A prendre sur l’attestation de
+Rang du bénéficiaire,3,191,193,2,27-29,F,
+"",,,,,,,droits ou la prise en charge pour autres régimes si présent
+"",,,,,,,"A prendre sur l’attestation de droits, la carte Vitale ou la prise en"
+N° caisse gestionnaire,3,194,196,2,51-53,O,
+"",,,,,,,charge. Voir codification annexe 3
+"",,,,,,,"A prendre sur l’attestation de droits, la carte Vitale ou la prise en"
+N° centre gestionnaire,4,197,200,2,54-57,O,"charge. Pour le RSI : cadrage du numéro de centre à gauche, le"
+"",,,,,,,4ème caractère doit être renseigné par un 0 en position 57
+Filler,30,201,230,,,F,Réservé pour usage futur ;
+Confirmation de la prise en charge dans le cadre,,,,,,,
+"",1,231,231,,,,1 pour oui laisser à vide sinon
+du dispositif des soins urgents,,,,,,,
+"",,,,,,,L’organisme obligatoire peut selon conventions régler
+"",,,,,,,directement la part de l’organisme complémentaire à
+"",,,,,,,l’établissement ou à l’assuré ou transmettre l’image de son
+"",,,,,,,décompte à l’organisme complémentaire. Lorsque
+Numéro accident du travail ou date d’accident de,,,,,,,
+"",9,232,240,2,86-94,F,l’établissement pratique un tiers payant sur la part
+droit commun,,,,,,,
+"",,,,,,,"complémentaire, il doit obligatoirement positionner le n° de"
+"",,,,,,,"l’organisme complémentaire, cadré à droite, et complété par des"
+"",,,,,,,"zéros à gauche, ou le top mutualiste «M » en position 128, la"
+"",,,,,,,zone étant complétée par des blancs.
+"",,,,,,,L’organisme obligatoire peut selon conventions régler
+"",,,,,,,directement la part de l’organisme complémentaire à
+"",,,,,,,l’établissement ou à l’assuré ou transmettre l’image de son
+"",,,,,,,décompte à l’organisme complémentaire. Lorsque
+N° d’organisme complémentaire,10,241,250,2,119-128,F,l’établissement pratique un tiers payant sur la part
+"",,,,,,,"complémentaire, il doit obligatoirement positionner le n° de"
+"",,,,,,,"l’organisme complémentaire, cadré à droite, et complété par"
+"",,,,,,,"des zéros à gauche, ou le top mutualiste «M » en position 128,"
+"",,,,,,,la zone étant complétée par des blancs.
+"",,,,,,,Voir codification en annexe 8 - JUSTIFICATION DES DROITS
+Nature de la pièce justificative des droits,1,251,251,2,58,O,
+"",,,,,,,AMO
+"",,,,,,,Obligatoire si l’établissement a indiqué qu’il possède une prise
+"",,,,,,,en charge. Indiquer la date de prise en charge par l’organisme
+Prise en charge établie le,8,252,259,2,59-64,F,
+"",,,,,,,d’Assurance maladie.ATTENTION format différent de B2
+"",,,,,,,JJMMAAAA
+"",,,,,,,Obligatoire si l’établissement a indiqué que l’assuré a présenté
+"Attestation de droits, carte Vitale ou prise en",,,,,,,"une attestation de droits, une carte Vitale ou une prise en"
+"",8,260,267,2,65-70,F,
+charge valable à compter du.,,,,,,,charge. Indiquer la date de validité de cette attestation.
+"",,,,,,,ATTENTION format différent de B2 JJMMAAAA
+"",,,,,,,"Code de l’organisme ayant délivré l’attestation de droits, la carte"
+Délivrée par,3,268,270,2,71-73,F,"Vitale ou la prise en charge. (A prendre sur l’attestation de droits,"
+"",,,,,,,la carte Vitale ou la prise en charge)
+"",,,,,,,A reprendre sur la prise en charge ou laisser à 000. Cette
+"",,,,,,,"information est obligatoire, en cas de présence de types 2B/2C,"
+Régime de prestation de l’assuré,3,271,273,2,74-76,F,"pour les bénéficiaires relevant de la subsistance « F212 », au"
+"",,,,,,,sens du décret du 22.12.1967 (ex : bénéficiaires hospitalisés
+"",,,,,,,"MECS, ...)"
+"",,,,,,,Valeur « F » : éclatement du flux à la source par l’établissement.
+Top éclatement des flux par l’établissement,1,274,274,2,95,F,La part AMC est transmise sur une facture distincte (hors CMU
+"",,,,,,,uniquement). A blanc : Pas d’éclatement à la source.
+"",,,,,,,Date d’entrée de l’hospitalisé dans l’établissement qui présente
+Date d’entrée,8,275,282,2,103-108,O,la facture (ou date de début de facturation). ATTENTION format
+"",,,,,,,différent de B2 JJMMAAAA
+"",,,,,,,"Indiquer la date de sortie réelle si tel est le cas, ou la date limite"
+Date de sortie,8,283,290,2,109-114,O,de facturation s’il s’agit d’une facturation partielle. ATTENTION
+"",,,,,,,format différent de B2 JJMMAAAA
+"",,,,,,,Indicateur Simphonie
+Montant total du séjour facturé au patient,8,291,298,,,N,
+"",,,,,,,Montant facturé au titre de la part patient
+"",,,,,,,Indicateur Simphonie
+Rejet AMO,1,299,299,,,O,
+"",,,,,,,Nombre de fois où FT AMO a été rejetée (0 à 9)
+"",,,,,,,Indicateur Simphonie
+Date de facturation AMO,8,300,307,,,N,
+"",,,,,,,Date de l’envoi de la FT AMO
+"",,,,,,,Indicateur Simphonie
+Date de facturation AMC,8,308,315,,,N,
+"",,,,,,,Date de l’envoi de la FT AMC
+"",,,,,,,Indicateur Simphonie
+Date de facturation patient,8,316,323,,,N,
+"",,,,,,,Date de l’envoi de la FT patient
+"",,,,,,,Indicateur Simphonie
+Date de paiement AMO,8,324,331,,,N,
+"",,,,,,,Date à laquelle la FT AMO est payée en totalité (statut S16)
+"",,,,,,,Indicateur Simphonie
+Date de paiement AMC,8,332,339,,,N,
+"",,,,,,,Date à laquelle la FT AMC est payée en totalité (statut S16)
+"",,,,,,,Indicateur Simphonie
+Date de paiement patient,8,340,347,,,N,
+"",,,,,,,Date à laquelle la FT patient est payée en totalité (statut S16)
+"",,,,,,,0 : avant FT validée (statut S2 à S5)
+Statut FT AMO,1,348,348,,,O,
+"",,,,,,,"1 : FT validée (statut S6 à S12, S14, S19, et S20)"
+"",,,,,,,2 : FT en NiNi (statut S13)
+"",,,,,,,3 : FT payée (S15+S16+S17+S18)
+"",,,,,,,9 :  sans objet
+"",,,,,,,0 : avant FT validée (statut S2 à S5)
+"",,,,,,,"1 : FT validée (statut S6 à S12, S14, S19, et S20)"
+Statut FT AMC,1,349,349,,,O,2 : FT en NiNi (statut S13)
+"",,,,,,,3 : FT payée (S15+S16+S17+S18)
+"",,,,,,,9 :  sans objet
+"",,,,,,,0 : avant FT validée (statut S2 à S5)
+"",,,,,,,"1 : FT validée (statut S6 à S12, S14, S19, et S20)"
+Statut FT patient,1,350,350,,,O,2 : FT en NiNi (statut S13)
+"",,,,,,,3 : FT payée (S15+S16+S17+S18)
+"",,,,,,,9 :  sans objet
+"",,,,,,,"Code INSEE à 5 chiffres, sans les deux premiers chiffres 99."
+"",,,,,,,Ou bien code ISO ISO 3166-1 Alpha-3.
+"",,,,,,,"Pour renseigner cette donnée,  il est important de prendre en"
+"",,,,,,,compte le contexte assurantiel du patient (et non son pays
+"",,,,,,,"d’origine).Par exemple, un patient français peut avoir une"
+Pays d’assurance social,3,351,353,,,O,
+"",,,,,,,"assurance étrangère (anglaise, américaine ou autre...). De"
+"",,,,,,,"même, un patient américain peut avoir une assurance anglaise"
+"",,,,,,,ou autre. Le code pays à renseigner est bien le code pays de
+"",,,,,,,l’assurance du patient. » Mettre 000 ou laisser à blanc quand
+"",,,,,,,l’information n’est pas disponible.
+Numéro d’identification permanent du patient,,,,,,,
+"",20,354,373,,,O,
+"(IPP)",,,,,,,
+"",,,,,,,Obligatoire pour le receveur des hôpitaux publics. Complément
+Complément au numéro de titre de recette,6,374,379,2S,42-47,F,
+"",,,,,,,au numéro de titre de recette (position 30-38 du type 2 CP).
+"",,,,,,,Valeur « O » si le bénéficiaire a déclaré un médecin traitant.
+Top déclaration de médecin traitant,1,380,380,2S,71,F,Valeur « N » si le bénéficiaire n’a pas déclaré de médecin
+"",,,,,,,traitant. A blanc dans les autres situations.
+Nom du médecin traitant ou du praticien qui a,,,,,,,A renseigner pour les factures médecins : Obligatoire si le
+"",25,381,405,2S,72-96,F,
+orienté le patient,,,,,,,patient est orienté.
+Prénom du médecin traitant ou du praticien qui a,,,,,,,A renseigner pour les factures médecins : Obligatoire si le
+"",15,406,420,2S,97-111,F,
+orienté le patient,,,,,,,patient est orienté.
+"",,,,,,,Valeurs possibles dans le cadre du parcours de soins : Cf.
+Indicateur du parcours de soins,1,421,421,2S,121,F,
+"",,,,,,,annexe 25.
+"",,,,,,,"0 : Non | 1 : Oui, laisser à vide si pas d'information ou non"
+CMUC en gestion unique,1,422,422,,,F,
+"",,,,,,,applicable
+"",,,,,,,N° FINESS de l’établissement destinataire en cas de transfert >
+"Établissement de Transfert",14,423,436,3S,67-80,F,
+"",,,,,,,48h
+"",,,,,,,N° FINESS de l’établissement de transfert lorsque le patient
+"Établissement de Retour",14,437,450,3S,67-80,F,
+"",,,,,,,revient dans l'établissement d'origine
+Nombre de disciplines de prestations (N),2,451,452,,,O,
+DMT n°1: Discipline de prestations (ex DMT),3,,,3,41-43,F,
+Mode de traitement,2,,,3,39-40,F,
+Date de début de séjour,8,,,3,44-49,O,ATTENTION format différent de B2 JJMMAAAA
+Date de fin de séjour,8,,,3,50-55,O,ATTENTION format différent de B2 JJMMAAAA
+Prix unitaire,7,,,3,76-82,O,5+2
+Base de remboursement,8,,,3,83-90,O,6+2
+Taux applicable à la prestation,3,,,3,91-93,O,
+Montant remboursable par la caisse,8,,,3,94-101,O,6+2

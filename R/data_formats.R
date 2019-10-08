@@ -13,6 +13,7 @@
 #' - *position_variable* Indique si le champ est à position variable. TRUE si *debut* et *fin* sont NA.
 #'
 #' @source
+#' - Formats 2019 : \url{https://www.atih.sante.fr/formats-pmsi-2019}
 #' - Formats 2018 : \url{https://www.atih.sante.fr/formats-pmsi-2018}
 #' - Formats 2017 : \url{https://www.atih.sante.fr/formats-pmsi-2017}
 "formats"
